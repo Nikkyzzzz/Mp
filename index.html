@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCS 403 Microprocessor Syllabus Tracker</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/x-icon;base64,<your_base64_favicon_data>" type="image/x-icon">
+
+    <!-- Embedded CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .unit {
+            margin-bottom: 20px;
+        }
+
+        .nit h3 {
+            color: #4CAF50;
+        }
+	.resources {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+    }
+
+    .book-box, .question-box {
+        width: 45%;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .book-box:hover, .question-box:hover {
+        transform: scale(1.05);
+    }
+
+    h2 {
+        color: #4CAF50;
+    }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+            text-decoration: none;
+            transition: color 0.3s ease, text-decoration-color 0.3s ease;
+        }
+
+        ul li.strikethrough {
+            text-decoration: line-through;
+            color: rgba(0, 0, 0, 0.5);
+            text-decoration-color: rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KCS 403 Microprocessor Syllabus Tracker</h1>
+    </header>
+<div class="resources">
+    <!-- Book Section -->
+    <div class="book-box" onclick="window.location.href='Microprocessor (askbooks.net) (1).pdf'">
+        <h2>Books</h2>
+        <p>Click to view the book PDF.</p>
+    </div>
+
+    <!-- Question Paper Section -->
+    <div class="question-box" onclick="window.location.href='question-papers.html'">
+        <h2>Question Papers</h2>
+        <p>Click to view question papers.</p>
+    </div>
+	<!-- Notes -->
+    <div class="question-box" onclick="window.location.href='notes.html'">
+        <h2>Notes of MP</h2>
+        <p>Notes</p>
+    </div>
+</div>
+
+    
+    <section class="course-outcomes">
+        <h2>Course Outcomes (CO)</h2>
+        <ul>
+            <li><input type="checkbox" id="co1"><label for="co1"> CO 1: Apply a basic concept of digital fundamentals to Microprocessor based personal computer system. K3, K4</label></li>
+            <li><input type="checkbox" id="co2"><label for="co2"> CO 2: Analyze a detailed s/w & h/w structure of the Microprocessor. K2, K4</label></li>
+            <li><input type="checkbox" id="co3"><label for="co3"> CO 3: Illustrate how the different peripherals (8085/8086) are interfaced with Microprocessor. K3</label></li>
+            <li><input type="checkbox" id="co4"><label for="co4"> CO 4: Analyze the properties of Microprocessors(8085/8086). K4</label></li>
+            <li><input type="checkbox" id="co5"><label for="co5"> CO 5: Evaluate the data transfer information through serial & parallel ports. K5</label></li>
+        </ul>
+    </section>
+    
+    <section class="syllabus">
+        <h2>Detailed Syllabus</h2>
+        <div class="unit">
+            <h3>Unit I: Microprocessor Basics</h3>
+            <ul>
+                <li><input type="checkbox" id="unit1-lecture1"><label for="unit1-lecture1"> Microprocessor evolution and types</label></li>
+                <li><input type="checkbox" id="unit1-lecture2"><label for="unit1-lecture2"> Microprocessor architecture and operation of its components</label></li>
+                <li><input type="checkbox" id="unit1-lecture3"><label for="unit1-lecture3"> Addressing modes, interrupts, data transfer schemes</label></li>
+                <li><input type="checkbox" id="unit1-lecture4"><label for="unit1-lecture4"> Instruction and data flow</label></li>
+                <li><input type="checkbox" id="unit1-lecture5"><label for="unit1-lecture5"> Timer and timing diagram</label></li>
+                <li><input type="checkbox" id="unit1-lecture6"><label for="unit1-lecture6"> Interfacing devices</label></li>
+            </ul>
+        </div>
+        <div class="unit">
+            <h3>Unit II: 8085 Microprocessor</h3>
+            <ul>
+                <li><input type="checkbox" id="unit2-lecture1"><label for="unit2-lecture1"> Pin diagram and internal architecture of 8085 microprocessor</label></li>
+                <li><input type="checkbox" id="unit2-lecture2"><label for="unit2-lecture2"> Registers, ALU, Control & status</label></li>
+                <li><input type="checkbox" id="unit2-lecture3"><label for="unit2-lecture3"> Interrupt and machine cycle</label></li>
+                <li><input type="checkbox" id="unit2-lecture4"><label for="unit2-lecture4"> Instruction sets</label></li>
+                <li><input type="checkbox" id="unit2-lecture5"><label for="unit2-lecture5"> Addressing modes</label></li>
+                <li><input type="checkbox" id="unit2-lecture6"><label for="unit2-lecture6"> Instruction formats</label></li>
+                <li><input type="checkbox" id="unit2-lecture7"><label for="unit2-lecture7"> Instruction Classification: data transfer, arithmetic operations, logical operations, branching operations, machine control and assembler directives</label></li>
+            </ul>
+        </div>
+        <div class="unit">
+            <h3>Unit III: 8086 Microprocessor</h3>
+            <ul>
+                <li><input type="checkbox" id="unit3-lecture1"><label for="unit3-lecture1"> Architecture of 8086 microprocessor: register organization, bus interface unit, execution unit, memory addressing, and memory segmentation</label></li>
+                <li><input type="checkbox" id="unit3-lecture2"><label for="unit3-lecture2"> Operating modes</label></li>
+                <li><input type="checkbox" id="unit3-lecture3"><label for="unit3-lecture3"> Instruction sets, instruction format, Types of instructions</label></li>
+                <li><input type="checkbox" id="unit3-lecture4"><label for="unit3-lecture4"> Interrupts: hardware and software interrupts</label></li>
+            </ul>
+        </div>
+        <div class="unit">
+            <h3>Unit IV: Assembly Language Programming</h3>
+            <ul>
+                <li><input type="checkbox" id="unit4-lecture1"><label for="unit4-lecture1"> Assembly language programming based on intel 8085/8086</label></li>
+                <li><input type="checkbox" id="unit4-lecture2"><label for="unit4-lecture2"> Instructions, data transfer, arithmetic, logic, branch operations, looping, counting, indexing, programming techniques, counters and time delays, stacks and subroutines, conditional call and return instructions</label></li>
+            </ul>
+        </div>
+        <div class="unit">
+            <h3>Unit V: Peripheral Devices</h3>
+            <ul>
+                <li><input type="checkbox" id="unit5-lecture1"><label for="unit5-lecture1"> 8237 DMA Controller</label></li>
+                <li><input type="checkbox" id="unit5-lecture2"><label for="unit5-lecture2"> 8255 programmable peripheral interface</label></li>
+                <li><input type="checkbox" id="unit5-lecture3"><label for="unit5-lecture3"> 8253/8254 programmable timer/counter</label></li>
+                <li><input type="checkbox" id="unit5-lecture4"><label for="unit5-lecture4"> 8259 programmable interrupt controller</label></li>
+                <li><input type="checkbox" id="unit5-lecture5"><label for="unit5-lecture5"> 8251 USART and RS232C</label></li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+    <!-- Embedded JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+            // Load saved state from localStorage
+            checkboxes.forEach(checkbox => {
+                const savedState = localStorage.getItem(checkbox.id);
+                if (savedState === 'true') {
+                    checkbox.checked = true;
+                    checkbox.parentElement.classList.add('strikethrough');
+                }
+            });
+
+            // Add event listener to checkboxes
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    if (checkbox.checked) {
+                        checkbox.parentElement.classList.add('strikethrough');
+                    } else {
+                        checkbox.parentElement.classList.remove('strikethrough');
+                    }
+                    localStorage.setItem(checkbox.id, checkbox.checked);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
